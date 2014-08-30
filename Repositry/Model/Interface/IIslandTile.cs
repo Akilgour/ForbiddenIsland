@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repositry.Model.Interface
 {
-    interface IIslandTile
+    public interface IIslandTile
     {
         int id { get; set; }
         string name { get; set; }
