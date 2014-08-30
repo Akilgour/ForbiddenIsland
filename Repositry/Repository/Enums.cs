@@ -24,7 +24,8 @@ namespace Repositry.Repository
            TheEarthStone,
            TheStatueOfTheWind,
            TheCrystalOfFire,
-           TheOceansChalice
+           TheOceansChalice,
+           None
        }
     }
 }
