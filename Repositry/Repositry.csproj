@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Model\Interface\ICard.cs" />
+    <Compile Include="Model\Interface\ICardTreasure.cs" />
     <Compile Include="Repository\Enums.cs" />
     <Compile Include="Model\Interface\IIslandTile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
