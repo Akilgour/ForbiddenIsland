@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForbiddenIsland", "ForbiddenIsland\ForbiddenIsland.csproj", "{FFC2F481-6972-478D-B57D-B545FC7619CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForbiddenIsland.Tests", "ForbiddenIsland.Tests\ForbiddenIsland.Tests.csproj", "{5F587996-9D35-4794-A596-427C556B5429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC2F481-6972-478D-B57D-B545FC7619CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC2F481-6972-478D-B57D-B545FC7619CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC2F481-6972-478D-B57D-B545FC7619CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC2F481-6972-478D-B57D-B545FC7619CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F587996-9D35-4794-A596-427C556B5429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F587996-9D35-4794-A596-427C556B5429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F587996-9D35-4794-A596-427C556B5429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F587996-9D35-4794-A596-427C556B5429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
