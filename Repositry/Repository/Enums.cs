@@ -18,5 +18,13 @@ namespace Repositry.Repository
            Silver,
            None
        }
+
+       public enum Treasures
+       {
+           TheEarthStone,
+           TheStatueOfTheWind,
+           TheCrystalOfFire,
+           TheOceansChalice
+       }
     }
 }
