@@ -15,7 +15,8 @@ namespace Repositry
            Yellow,
            Purple,
            Blue,
-           Silver
+           Silver,
+           None
        }
     }
 }
