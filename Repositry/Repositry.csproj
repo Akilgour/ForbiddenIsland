@@ -44,8 +44,8 @@
     <Compile Include="Model\Interface\ICardFlood.cs" />
     <Compile Include="Model\Interface\ICardTreasure.cs" />
     <Compile Include="Model\Interface\ICardPlayerHand.cs" />
+    <Compile Include="Model\Interface\IIsland.cs" />
     <Compile Include="Repository\Enums.cs" />
-    <Compile Include="Model\Interface\IIslandTile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
