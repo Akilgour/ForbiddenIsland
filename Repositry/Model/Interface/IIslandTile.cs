@@ -10,7 +10,7 @@ namespace Repositry.Model.Interface
     {
         int id { get; set; }
         string name { get; set; }
-        bool isFlooded { get; set; }
+        Repositry.Repository.Enums.TileState submergedState { get; set; }
         Repositry.Repository.Enums.PlayerColours startingTileForPlayer { get; set; }
         Repositry.Repository.Enums.Treasures canHaveTreasures { get; set; }
         bool hasTreasures { get; set; }

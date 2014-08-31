@@ -27,5 +27,12 @@ namespace Repositry.Repository
            TheOceansChalice,
            None
        }
+
+       public enum TileState
+       {
+           Normal,
+           Flodded,
+           Gone
+       }
     }
 }
