@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repositry.Model.Interface
 {
-    public interface ICardTreasure : ICardPlayerHandCard
+    public interface ICardPlayerHandCard
     {
-        Repositry.Repository.Enums.Treasures forTreasures { get; set; }
     }
 }
