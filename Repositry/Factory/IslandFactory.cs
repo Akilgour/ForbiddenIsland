@@ -13,6 +13,11 @@ namespace Repositry.Factory
     {
         public IIsland Create(object FloodCards)
         {
+            if  (!( FloodCards is List<CardFlood>))
+            {
+                throw new ArgumentException("FloodCards must be a list of CardFloods");
+            }
+
             var floodCards = (List<CardFlood>)FloodCards;
 
             if (floodCards.Count != 24)
