@@ -40,16 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Factory\Interface\IIslandFactory.cs" />
+    <Compile Include="Factory\IslandFactory.cs" />
     <Compile Include="Model\Interface\ICard.cs" />
     <Compile Include="Model\Interface\ICardFlood.cs" />
     <Compile Include="Model\Interface\ICardTreasure.cs" />
     <Compile Include="Model\Interface\ICardPlayerHand.cs" />
     <Compile Include="Model\Interface\IIsland.cs" />
+    <Compile Include="Model\Island.cs" />
     <Compile Include="Repository\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Factory\" />
     <Folder Include="Interface\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositry", "Repositry\Repositry.csproj", "{33619895-6220-48D7-8DF4-2B71908389DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repositry\Repository.csproj", "{33619895-6220-48D7-8DF4-2B71908389DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForbiddenIsland", "MVCForbiddenIsland\MVCForbiddenIsland.csproj", "{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestRepository", "UnitTestRepository\UnitTestRepository.csproj", "{0AEB3877-9786-4A3F-BB45-857AFFBEBD59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2835FDBA-96BA-4D5C-850D-A909BB12F4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEB3877-9786-4A3F-BB45-857AFFBEBD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEB3877-9786-4A3F-BB45-857AFFBEBD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEB3877-9786-4A3F-BB45-857AFFBEBD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEB3877-9786-4A3F-BB45-857AFFBEBD59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
