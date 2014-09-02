@@ -9,6 +9,6 @@ namespace Repositry.Factory.Interface
 {
    public interface IIslandFactory 
     {
-       IIsland Create();
+       IIsland Create(object FloodCards);
     }
 }

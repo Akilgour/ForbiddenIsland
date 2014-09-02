@@ -8,7 +8,9 @@ namespace Repositry.Model.Interface
 {
     public interface ICardFlood
     {
-        int islandTileid { get; set; }
-        string islandTile { get; set; }
+        int IslandTileid { get; set; }
+        string IslandTile { get; set; }
+
+       
     }
 }

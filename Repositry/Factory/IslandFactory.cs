@@ -11,10 +11,18 @@ namespace Repositry.Factory
 {
     public class IslandFactory : IIslandFactory
     {
-        public IIsland Create()
+        public IIsland Create(object FloodCards)
         {
+            var floodCards = (List<CardFlood>)FloodCards;
+
+            if (floodCards.Count != 24)
+            {
+                throw new ArgumentException("There must be 24 cards passed into the Island Factory");
+            }
 
             return new Island();
         }
+
+      
     }
 }

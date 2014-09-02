@@ -8,7 +8,7 @@ namespace Repositry.Model.Interface
 {
    public interface ICard
     {
-       int id { get; set; }
+       int Id { get; set; }
        string Tite { get; set; }
     }
 }
