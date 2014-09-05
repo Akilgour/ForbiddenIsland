@@ -11,21 +11,35 @@ namespace Repositry.Factory
 {
     public class IslandFactory : IIslandFactory
     {
-        public IIsland Create(object FloodCards)
+        public IIsland Create(object LocationDetails)
         {
-            if  (!( FloodCards is List<CardFlood>))
+            if (!(LocationDetails is List<LocationDetails>))
             {
-                throw new ArgumentException("FloodCards must be a list of CardFloods");
+                throw new ArgumentException("FloodCards must be a list of PlaceNameId");
             }
 
-            var floodCards = (List<CardFlood>)FloodCards;
+            var locationDetails = (List<LocationDetails>)LocationDetails;
 
-            if (floodCards.Count != 24)
+            if (locationDetails.Count != 24)
             {
                 throw new ArgumentException("There must be 24 cards passed into the Island Factory");
             }
 
-            return new Island();
+
+
+            var island = new Island();
+
+           // island.IslandBoard.Add(new IslandTile( id ));
+
+            island.IslandBoard = new List<IslandTile>();
+            foreach (var location in locationDetails)
+            {
+
+                island.IslandBoard.Add(new IslandTile() { Id = location.Id, Name = location.Name, StartingTileForPlayer = location.StartingTileForPlayer, CanHaveTreasures = location.CanHaveTreasures });
+
+            }
+
+            return island;
         }
 
       

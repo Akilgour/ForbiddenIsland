@@ -9,6 +9,8 @@ namespace Repositry.Model.Interface
 {
     public interface IIsland
     {
-        DataTable IslandBoard { get; set; }
+        List<IslandTile> IslandBoard { get; set; }
+
+
     }
 }

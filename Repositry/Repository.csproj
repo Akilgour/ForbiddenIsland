@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Factory\Interface\IIslandFactory.cs" />
+    <Compile Include="Model\Interface\IIslandTile.cs" />
     <Compile Include="Factory\IslandFactory.cs" />
     <Compile Include="Model\Card.cs" />
     <Compile Include="Model\CardFlood.cs" />
@@ -49,7 +50,10 @@
     <Compile Include="Model\Interface\ICardTreasure.cs" />
     <Compile Include="Model\Interface\ICardPlayerHand.cs" />
     <Compile Include="Model\Interface\IIsland.cs" />
+    <Compile Include="Model\Interface\ILocationDetails.cs" />
     <Compile Include="Model\Island.cs" />
+    <Compile Include="Model\IslandTile.cs" />
+    <Compile Include="Model\LocationDetails.cs" />
     <Compile Include="Repository\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

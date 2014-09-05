@@ -18,7 +18,7 @@ namespace UnitTestRepository.Factory
         public void IsValid_TakesEmptyCardList()
         {
             //Arrange 
-            var floodCards = new List<ICardFlood>();
+            var floodCards = new List<String>();
             var islandFactory = new IslandFactory();
 
             //Act 
@@ -33,9 +33,9 @@ namespace UnitTestRepository.Factory
         public void IsValid_TakesCardListWithOneCard()
         {
             //Arrange 
-            var floodCards = new List<CardFlood>();
-           
-            var cardOne = new CardFlood();
+            var floodCards = new List<String>();
+
+            var cardOne = "cardOne";
             floodCards.Add(cardOne);
 
             var islandFactory = new IslandFactory();
@@ -52,57 +52,59 @@ namespace UnitTestRepository.Factory
         public void IsValid_TakesCardListWithTwentyFourCards()
         {
             //Arrange 
-            var floodCards = new List<CardFlood>();
-
-            var cardOne = new CardFlood();
+            var floodCards = new List<LocationDetails>();
+                     
+         var cardOne = new LocationDetails(1, "cardOne");
             floodCards.Add(cardOne);
-            var cardTwo = new CardFlood();
+            var cardTwo  = new LocationDetails( 2, "cardTwo");
             floodCards.Add(cardTwo);
-            var cardThree = new CardFlood();
+            var cardThree  = new LocationDetails( 3, "cardThree");
             floodCards.Add(cardThree);
-            var cardFour = new CardFlood();
+            var cardFour  = new LocationDetails( 4, "cardFour");
             floodCards.Add(cardFour);
-            var cardFive = new CardFlood();
+            var cardFive  = new LocationDetails( 5, "cardFive");
             floodCards.Add(cardFive);
 
-            var cardSix = new CardFlood();
+            var cardSix  = new LocationDetails(6, "cardSix");
             floodCards.Add(cardSix);
-            var cardSeven = new CardFlood();
+            var cardSeven  = new LocationDetails( 7, "cardSeven");
             floodCards.Add(cardSeven);
-            var cardEight = new CardFlood();
+            var cardEight  = new LocationDetails( 8, "cardEight");
             floodCards.Add(cardEight);
-            var cardNine = new CardFlood();
+            var cardNine  = new LocationDetails( 9, "cardNine");
             floodCards.Add(cardNine);
 
-            var cardTen = new CardFlood();
+            var cardTen  = new LocationDetails( 10, "cardTen");
             floodCards.Add(cardTen);
-            var cardEleven = new CardFlood();
+            var cardEleven  = new LocationDetails( 11, "cardEleven");
             floodCards.Add(cardEleven);
-            var cardTwelve = new CardFlood();
+            var cardTwelve  = new LocationDetails( 12, "cardTwelve");
             floodCards.Add(cardTwelve);
-            var cardThirteen = new CardFlood();
+            var cardThirteen  = new LocationDetails( 13, "cardThirteen");
             floodCards.Add(cardThirteen);
-            var cardFourteen = new CardFlood();
+            var cardFourteen  = new LocationDetails(14, "cardFourteen");
             floodCards.Add(cardFourteen);
-            var cardFifteen = new CardFlood();
+            var cardFifteen  = new LocationDetails( 15, "cardFifteen");
             floodCards.Add(cardFifteen);
 
-            var cardSixteen = new CardFlood();
+            var cardSixteen  = new LocationDetails(16, "cardSixteen");
             floodCards.Add(cardSixteen);
-            var cardSeventeen = new CardFlood();
+            var cardSeventeen  = new LocationDetails( 17, "cardSeventeen");
             floodCards.Add(cardSeventeen);
-            var cardEighteen = new CardFlood();
+            var cardEighteen  = new LocationDetails( 18, "cardEighteen");
             floodCards.Add(cardEighteen);
-            var cardNineteen = new CardFlood();
+            var cardNineteen  = new LocationDetails( 19, "cardNineteen");
             floodCards.Add(cardNineteen);
 
-            var cardTwentyOne = new CardFlood();
+            var cardTwenty  = new LocationDetails( 20, "cardTwenty");
+            floodCards.Add(cardTwenty);
+            var cardTwentyOne  = new LocationDetails( 21, "cardTwentyOne");
             floodCards.Add(cardTwentyOne);
-            var cardTwentyTwo = new CardFlood();
+            var cardTwentyTwo  = new LocationDetails( 22, "cardTwentyTwo");
             floodCards.Add(cardTwentyTwo);
-            var cardTwentyThree = new CardFlood();
+            var cardTwentyThree  = new LocationDetails( 23, "cardTwentyThree");
             floodCards.Add(cardTwentyThree);
-            var cardTwentyFour = new CardFlood();
+            var cardTwentyFour  = new LocationDetails( 24, "cardTwentyFour");
             floodCards.Add(cardTwentyFour);
 
             var islandFactory = new IslandFactory();
@@ -111,7 +113,7 @@ namespace UnitTestRepository.Factory
             var island = islandFactory.Create(floodCards);
 
             //Assert   
-            Assert.AreNotEqual(island.IslandBoard.Rows.Count, 24);
+            Assert.AreEqual(island.IslandBoard.Count, 24);
         }
 
     }

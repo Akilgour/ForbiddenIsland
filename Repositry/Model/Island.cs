@@ -10,6 +10,6 @@ namespace Repositry.Model
 {
     public class Island : IIsland
     {
-        public DataTable IslandBoard { get; set; }
+       public List<IslandTile> IslandBoard { get; set; }
     }
 }
