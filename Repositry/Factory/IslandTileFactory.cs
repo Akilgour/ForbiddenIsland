@@ -11,7 +11,7 @@ namespace Repositry.Factory
     public class IslandTileFactory : IIslandTileFactory
     {
 
-       public  IIslandTile  Create(object LocationDetails)
+       public  IslandTile  Create(object LocationDetails)
         {
             if (!(LocationDetails is  LocationDetails ))
             {

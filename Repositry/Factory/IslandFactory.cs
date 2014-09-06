@@ -27,9 +27,12 @@ namespace Repositry.Factory
 
             var island = new Island();
             island.IslandBoard = new List<IslandTile>();
+            var islandTileFactory = new IslandTileFactory();
             foreach (var location in locationDetails)
             {
-                island.IslandBoard.Add(new IslandTile() { Id = location.Id, Name = location.Name, StartingTileForPlayer = location.StartingTileForPlayer, CanHaveTreasures = location.CanHaveTreasures });
+                //island.IslandBoard.Add(new IslandTile() { Id = location.Id, Name = location.Name, StartingTileForPlayer = location.StartingTileForPlayer, CanHaveTreasures = location.CanHaveTreasures });
+                island.IslandBoard.Add(  islandTileFactory.Create(location)  );
+
             }
 
             return island;

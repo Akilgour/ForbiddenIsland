@@ -1,4 +1,5 @@
 ﻿using Repositry.Factory.Interface;
+using Repositry.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Repositry.Factory.Interface
 {
     public interface IIslandTileFactory
     {
-        IIslandTile Create(object LocationDetails);
+        IslandTile Create(object LocationDetails);
     }
 }

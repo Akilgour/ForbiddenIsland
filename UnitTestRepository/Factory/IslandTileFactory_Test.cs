@@ -81,7 +81,7 @@ namespace UnitTestRepository.Factory
             //Arrange 
             var locationDetails = new LocationDetails(1, "a",   Repositry.Repository.Enums.Treasures.TheCrystalOfFire);
             var islandTileFactory = new IslandTileFactory();
-
+            
             //Act 
             var islandTile = islandTileFactory.Create(locationDetails);
 
