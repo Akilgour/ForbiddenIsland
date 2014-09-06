@@ -23,6 +23,13 @@ namespace Repositry.Model
             : this(Id, Name, Repositry.Repository.Enums.PlayerColours.None, Repository.Enums.Treasures.None)
         { }
 
+        public LocationDetails(int Id, string Name, Repositry.Repository.Enums.PlayerColours StartingTileForPlayer)
+            : this(Id, Name, StartingTileForPlayer, Repository.Enums.Treasures.None)
+        { }
+
+        public LocationDetails(int Id, string Name, Repository.Enums.Treasures CanHaveTreasures)
+            : this(Id, Name, Repositry.Repository.Enums.PlayerColours.None, CanHaveTreasures)
+        { }
 
         public int Id { get; set; }
         public string Name { get; set; }

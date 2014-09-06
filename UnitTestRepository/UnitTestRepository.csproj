@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Factory\IslandFactory_Test.cs" />
+    <Compile Include="Factory\IslandTileFactory_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

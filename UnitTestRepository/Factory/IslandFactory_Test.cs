@@ -30,7 +30,7 @@ namespace UnitTestRepository.Factory
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException), "There must be 24 cards passed into the Island Factory")]
-        public void IsValid_TakesCardListWithOneCard()
+        public void ExpectedException_TakesCardListWithOneCard()
         {
             //Arrange 
             var floodCards = new List<String>();
@@ -48,7 +48,6 @@ namespace UnitTestRepository.Factory
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException), "There must be 24 cards passed into the Island Factory")]
         public void IsValid_TakesCardListWithTwentyFourCards()
         {
             //Arrange 

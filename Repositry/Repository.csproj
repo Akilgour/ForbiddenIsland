@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Factory\Interface\IIslandFactory.cs" />
+    <Compile Include="Factory\Interface\IIslandTileFactory.cs" />
+    <Compile Include="Factory\IslandTileFactory.cs" />
     <Compile Include="Model\Interface\IIslandTile.cs" />
     <Compile Include="Factory\IslandFactory.cs" />
     <Compile Include="Model\Card.cs" />
