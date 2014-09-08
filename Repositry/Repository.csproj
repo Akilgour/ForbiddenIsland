@@ -40,9 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Factory\FloodDeckFactory.cs" />
+    <Compile Include="Factory\Interface\IFloodDeckFactory.cs" />
     <Compile Include="Factory\Interface\IIslandFactory.cs" />
     <Compile Include="Factory\Interface\IIslandTileFactory.cs" />
     <Compile Include="Factory\IslandTileFactory.cs" />
+    <Compile Include="Model\FloodDeck.cs" />
+    <Compile Include="Model\Interface\IFloodDeck.cs" />
     <Compile Include="Model\Interface\IIslandTile.cs" />
     <Compile Include="Factory\IslandFactory.cs" />
     <Compile Include="Model\Card.cs" />
